@@ -1,0 +1,166 @@
+
+---
+
+## File Descriptions
+
+| File/Folder | Description |
+|--------------|-------------|
+| **index.html** | Home page with hero section, company highlights, and core values |
+| **about.html** | Company background, mission, vision, and values |
+| **services.html** | Overview of services offered and client information |
+| **sectors.html** | Industry sectors in which the company operates |
+| **contact.html** | Company contact details and quick inquiry information |
+| **css/style.css** | Main stylesheet containing layout, color scheme, and responsive design |
+| **js/script.js** | JavaScript file controlling menu toggle and animations |
+| **logo.png** | Official company logo used throughout the website |
+
+---
+
+## Branding Guidelines
+
+### Logo Placement
+- **Navigation Bar:** Appears on all pages, top-left corner (60×60px)
+- **Home Page Hero Section:** Displayed at 280×280px with a floating animation
+
+### Logo File Requirements
+- Format: `.png`
+- Background: Transparent
+- File name: `logo.png`
+- Location: Project root folder
+
+---
+
+## Social Media Integration
+
+The website footer includes links to the company’s official social media pages:
+
+| Platform | URL |
+|-----------|-----|
+| Facebook | [facebook.com/erisupplysolutionsltd](https://facebook.com/erisupplysolutionsltd) |
+| Twitter | [twitter.com/erisupplysolutionsltd](https://twitter.com/erisupplysolutionsltd) |
+| Instagram | [instagram.com/erisupplysolutionsltd](https://instagram.com/erisupplysolutionsltd) |
+
+---
+
+## Website Pages
+
+### 1. Home Page
+Introduces the company’s mission and services, featuring:
+- Hero section with animated logo
+- Core company highlights
+- “Why Choose ERI SUPPLY” value cards
+
+### 2. About Page
+Provides an overview of company history, goals, mission, and vision.
+
+### 3. Services Page
+Lists services offered and business capabilities with clear visual presentation.
+
+### 4. Sectors Page
+Displays all industry sectors where the company operates, including:
+- Construction and Maintenance
+- Supply and Logistics
+- Equipment and Material Procurement
+- Plumbing, Heat, and Air-Conditioning Installation
+- Architectural and Engineering Activities
+
+### 5. Contact Page
+Includes company address, phone, and email with quick navigation links.
+
+---
+
+## Design Features
+
+- Professional layout and color scheme
+- Gradient blue and cyan backgrounds
+- Soft shadow effects on cards and buttons
+- Smooth transitions and responsive typography
+- Accessible design supporting all major browsers
+- Fully responsive grid layout for mobile and desktop viewing
+
+---
+
+## Contact Information
+
+**Company Name:** ERI SUPPLY SOLUTIONS LTD
+**Address:** Nyarugenge, Kigali, Rwanda
+**Phone:** +250 788 859 265
+**Email:** rchkzmn@gmail.com
+**Managing Director:** Mr. Hakizimana Eric
+
+---
+
+## Technical Requirements
+
+- HTML5 and CSS3 compliant
+- Uses Font Awesome CDN for icons
+- No external frameworks required
+- Optimized for Chrome, Firefox, Safari, and Edge
+- Mobile-friendly via CSS Flexbox and Media Queries
+
+---
+
+## Deployment
+
+To view the website locally:
+
+1. Clone or download the repository.
+2. Ensure all files are placed according to the project structure above.
+3. Open `index.html` using any modern browser.
+4. Verify navigation links and media display correctly.
+
+For online deployment:
+- Upload the entire folder structure to a web hosting service.
+- Ensure the logo image remains in the root directory.
+- Confirm all internal links use relative paths.
+
+---
+
+## Troubleshooting
+
+| Issue | Possible Cause | Solution |
+|--------|----------------|----------|
+| Logo not visible | File name or location incorrect | Verify `logo.png` is in the root folder |
+| Icons missing | Internet connection or missing CDN | Check Font Awesome link in `<head>` |
+| Navigation links broken | File name mismatch | Ensure all files use lowercase names with `.html` extension |
+| Layout not responsive | CSS file missing | Confirm `css/style.css` is correctly linked |
+
+---
+
+## Maintenance and Customization
+
+- To update company details, edit the relevant text in `about.html` and `contact.html`.
+- To change color schemes or typography, modify variables in `css/style.css`.
+- To update or add services/sectors, edit the respective HTML files under the `.card` or `.sector-card` sections.
+- To add or remove social media links, edit the `<footer>` section in each HTML file.
+
+---
+
+## Quality Assurance Checklist
+
+- [x] Responsive design on mobile, tablet, and desktop
+- [x] Logo visible and correctly sized on all pages
+- [x] Navigation links fully functional
+- [x] Footer links and social media icons active
+- [x] Color scheme consistent with brand identity
+- [x] All pages validated and tested
+
+---
+
+## License
+All website content, design elements, and source files are the property of **ERI SUPPLY SOLUTIONS LTD**.
+Unauthorized use, reproduction, or distribution is strictly prohibited.
+
+---
+
+## Version Information
+**Version:** 1.0.0
+**Release Date:** October 2025
+**Author:** ERI SUPPLY SOLUTIONS LTD – Web Development Team
+
+---
+
+## Summary
+This project represents the official website of **ERI SUPPLY SOLUTIONS LTD**, developed to provide a professional online presence. It highlights the company’s services, sectors, and contact details with a responsive, modern interface designed for ease of use and long-term maintainability.
+
+---

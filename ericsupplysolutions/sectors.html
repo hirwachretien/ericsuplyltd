@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectors - ERI SUPPLY SOLUTIONS LTD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #003D82;
+            --light-blue: #0052A3;
+            --cyan: #00BFFF;
+            --light-cyan: #00D9FF;
+            --bg-light: #f0f9ff;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --accent: #FF6B6B;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Sectors Grid & Cards --- */
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+        .sector-card {
+            background: linear-gradient(135deg, var(--bg-light) 0%, #e0f2fe 100%);
+            border: 2px solid var(--cyan);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 191, 255, 0.1);
+            color: var(--text-dark);
+            text-decoration: none;
+            height: 350px;
+        }
+        .sector-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 191, 255, 0.3);
+        }
+        .sector-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .sector-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+        }
+        .sector-card p {
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
+            .sectors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .sectors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation (matching index.html) -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="logo.png" alt="ERI SUPPLY SOLUTIONS LTD Logo" class="logo-img">
+            <span>ERI SUPPLY<br>SOLUTIONS LTD</span>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="sectors.html">Sectors</a>
+                <ul class="dropdown-menu">
+                    <li><a href="sector-power-electricity.html">Power and Electricity</a></li>
+                    <li><a href="sector-it-infrastructure.html">IT Infrastructure</a></li>
+                    <li><a href="sector-maintenance-services.html">Maintenance Services</a></li>
+                    <li><a href="sector-stationeries-furniture.html">Stationeries & Furniture</a></li>
+                    <li><a href="sector-plumbing-hvac.html">Plumbing, HVAC</a></li>
+                    <li><a href="sector-architectural-engineering.html">Architectural & Engineering</a></li>
+                </ul>
+            </li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        const navMenu = document.getElementById('navMenu');
+        navMenu.classList.toggle('active');
+    }
+</script>
+
+<!-- Header -->
+<section class="sectors-header" style="padding: 3rem; background: var(--bg-light); text-align: center;">
+    <h1 style="color: var(--primary-blue); font-size: 2.5rem;">Sectors of Operations</h1>
+    <p style="font-size: 1.3rem; color: var(--text-dark); margin-top: 1rem;">Specialized services across key industries</p>
+</section>
+
+
+<!-- Sectors Content -->
+<section class="sectors-content">
+    <div class="sectors-grid">
+        <a href="sector-power-electricity.html" class="sector-card">
+            <div class="sector-icon">⚡</div>
+            <h3>Power and Electricity</h3>
+            <p>Comprehensive electrical equipment and power supply solutions for businesses and institutions of all sizes.</p>
+        </a>
+        <a href="sector-it-infrastructure.html" class="sector-card">
+            <div class="sector-icon">💻</div>
+            <h3>IT Infrastructure and Equipment</h3>
+            <p>Advanced IT solutions, networking equipment, and infrastructure support for digital transformation initiatives.</p>
+        </a>
+        <a href="sector-maintenance-services.html" class="sector-card">
+            <div class="sector-icon">🔧</div>
+            <h3>Maintenance Services</h3>
+            <p>General maintenance of all equipment and materials to ensure optimal operational efficiency and longevity.</p>
+        </a>
+        <a href="sector-stationeries-furniture.html" class="sector-card">
+            <div class="sector-icon">📋</div>
+            <h3>Stationeries and Office Furniture</h3>
+            <p>Complete office supplies including furniture, materials, and all stationery needs for modern workplaces.</p>
+        </a>
+        <a href="sector-plumbing-hvac.html" class="sector-card">
+            <div class="sector-icon">🚿</div>
+            <h3>Plumbing, Heat and Air-Conditioning Installation</h3>
+            <p>Professional plumbing, heating, and air-conditioning services for residential, commercial, and industrial facilities.</p>
+        </a>
+        <a href="sector-architectural-engineering.html" class="sector-card">
+            <div class="sector-icon">🏛️</div>
+            <h3>Architectural and Engineering Activities</h3>
+            <p>Expert architectural and engineering consultancy services for planning, design, and technical project support.</p>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color: var(--primary-blue); color: white; padding: 2rem;">
+    <div class="footer-container">
+        <div class="footer-grid" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="footer-section">
+                <h3>ERI SUPPLY SOLUTIONS LTD</h3>
+                <p>"Supplying Excellence, Delivering Trust"</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html" style="color: white;">About Us</a></li>
+                    <li><a href="sectors.html" style="color: white;">Sectors</a></li>
+                    <li><a href="contact.html" style="color: white;">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Nyarugenge, Kigali, Rwanda</p>
+                <p>📞 +250 788 859 265</p>
+                <p>✉️ rchkzmn@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERI SUPPLY SOLUTIONS LTD - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Hero Section */
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #003D82 0%, #0052A3 100%);
+            border-radius: 16px;
+            margin: 2rem 0;
+            color: white;
+        }
+        .hero-content h1,
+        .hero-content p {
+            color: white;
+        }
+        .hero-logo {
+            width: 200px;
+            height: 200px;
+            animation: rotateLogo 10s linear infinite;
+        }
+        @keyframes rotateLogo {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .hero .btn {
+            display: inline-block;
+            padding: 0.9rem 1.6rem;
+            background: white;
+            color: #003D82;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+            margin-top: 1rem;
+        }
+        .hero .btn:hover {
+            background: #00BFFF;
+            color: white;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 900px) {
+            .hero-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .hero-logo {
+                margin-top: 2rem;
+            }
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #f0f9ff;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 25px rgba(0, 61, 130, 0.1);
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 61, 130, 0.2);
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #003D82;
+        }
+
+        /* Hero Content */
+        .hero-content p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="logo.png" alt="ERI SUPPLY SOLUTIONS LTD Logo" class="logo-img">
+            <span>ERI SUPPLY<br>SOLUTIONS LTD</span>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="sectors.html">Sectors</a>
+                <ul class="dropdown-menu">
+                    <li><a href="sector-power-electricity.html">Power and Electricity</a></li>
+                    <li><a href="sector-it-infrastructure.html">IT Infrastructure</a></li>
+                    <li><a href="sector-maintenance-services.html">Maintenance Services</a></li>
+                    <li><a href="sector-stationeries-furniture.html">Stationeries & Furniture</a></li>
+                    <li><a href="sector-plumbing-hvac.html">Plumbing, HVAC</a></li>
+                    <li><a href="sector-architectural-engineering.html">Architectural & Engineering</a></li>
+                </ul>
+            </li>
+
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Supplying Excellence</h1>
+            <p>Delivering Trust and Quality Solutions</p>
+            <p>Your trusted partner for reliable, cost-effective supply solutions across Rwanda and East Africa.</p>
+            <a href="services.html" class="btn">Explore Our Services →</a>
+        </div>
+        <div class="logo-display">
+            <img src="logo.png" alt="ERI SUPPLY SOLUTIONS LTD" class="hero-logo">
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose">
+    <div class="container">
+        <h2>Why Choose ERI SUPPLY?</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>Competitive Pricing</h3>
+                <p>Best value for your investment with our competitive pricing structure.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Timely Delivery</h3>
+                <p>Reliable and dependable service with quick delivery times nationwide.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🤝</div>
+                <h3>Trusted Network</h3>
+                <p>Broad supplier partnerships with established relationships.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">✓</div>
+                <h3>Quality Assured</h3>
+                <p>Excellence in every product and service we provide.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌍</div>
+                <h3>Wide Coverage</h3>
+                <p>Extensive reach across Rwanda and East Africa to serve our clients effectively.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">📞</div>
+                <h3>Excellent Support</h3>
+                <p>Professional and responsive customer support to ensure satisfaction at every step.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>ERI SUPPLY SOLUTIONS LTD</h3>
+                <p>"Supplying Excellence, Delivering Trust"</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/erisupplysolutionsltd" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/erisupplysolutionsltd" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/erisupplysolutionsltd" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="sectors.html">Sectors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Nyarugenge, Kigali, Rwanda</p>
+                <p>📞 +250 788 859 265</p>
+                <p>✉️ rchkzmn@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ERI SUPPLY SOLUTIONS LTD. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
